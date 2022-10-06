@@ -1,0 +1,121 @@
+:root {
+    --yellow: #DCA500;
+    --yellow-light: #FFBF00;
+    --grey: #333;
+    --white: #fafafa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000 url(../img/bg.jpg) no-repeat fixed center/cover;
+    padding: 2%;
+    overflow-x: hidden;
+}
+
+h1, h2, span, p {
+    font-family: 'Nunito', sans-serif;
+    color: var(--white);
+}
+
+header h1 {
+    color: var(--yellow-light);
+    font-weight: 200;
+    font-size: 4em;
+}
+
+main .cards-main {
+    padding: 2% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    overflow-x: hidden;
+}
+
+main .cards-main .card-container {
+    width: 90%;
+    margin: 5% 0;
+    padding: 1rem;
+    border-radius: .3rem;
+    background: var(--white);
+    transition: .3s ease-in-out;
+    cursor: pointer;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .cards-main .card-container:hover {
+    margin-top: -1%;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px 3px #999;
+}
+
+main .cards-main .card-container .card-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+main .cards-main .card-container .card-main span {
+    color: var(--grey);
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+main .cards-main .card-container .card-main h2 {
+    color: var(--yellow-light);
+    font-size: 2em;
+}
+
+main .phrases-container {
+    width: 100%;
+    margin-top: 5%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .phrases-container button {
+    max-width: 60%;
+    padding: 1rem;
+
+    font-size: 1.7em;
+    font-weight: 600;
+
+    transition: .3s ease-in-out;
+
+    border-radius: .3rem;
+    background: var(--yellow-light);
+    color: var(--white);
+    cursor: pointer;
+}
+
+main .phrases-container button:hover {
+    border-radius: 1rem;
+    color: var(--yellow);
+    background-color: var(--white);
+}
+
+main .phrases-container p {
+    width: 75%;
+    margin-top: 4%;
+    font-size: 2em;
+    font-weight: 700;
+    transition: .1s ease-in;
+    text-align: center;
+}
+
+main .phrases-container p:hover {
+    opacity: .7;
+}
