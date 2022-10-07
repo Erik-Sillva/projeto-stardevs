@@ -12,44 +12,48 @@
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <title>Star-Devs</title>
 </head>
-<body>
-
-    <header>
-        <h1>Star-Devs</h1>
-    </header>
-
-    <main>
-    <section class="cards-main">
-        <div class="card-container">
-            <div class="card-main">
-                <span>Personagens</span>
-                <h2 id="persons">Carregando...</h2>
-            </div>
-            <img src="./img/darth.svg" alt="Imagem  Personagens">
+<body onload="loading()">
+    <div class="box-load">
+        <div class="preload">
+            <!-- IMG BACKGROUND -->
         </div>
+    </div>
 
-        <div class="card-container">
-            <div class="card-main">
-                <span>Naves Estelares</span>
-                <h2 id="starships">Carregando...</h2>
+    <div class="content">
+        <header>
+            <h1>Star-Devs</h1>
+        </header>
+        <main>
+        <section class="cards-main">
+            <div class="card-container">
+                <div class="card-main">
+                    <span>Personagens</span>
+                    <h2 id="persons">Carregando...</h2>
+                </div>
+                <img src="./img/darth.svg" alt="Imagem  Personagens">
             </div>
-            <img src="./img/starship.svg" alt="Imagem  Naves Estelares">
-        </div>
-
-        <div class="card-container">
-            <div class="card-main">
-                <span>Planetas</span>
-                <h2 id="planets">Carregando...</h2>
+            <div class="card-container">
+                <div class="card-main">
+                    <span>Naves Estelares</span>
+                    <h2 id="starships">Carregando...</h2>
+                </div>
+                <img src="./img/starship.svg" alt="Imagem  Naves Estelares">
             </div>
-            <img src="./img/planet.svg" alt="Imagem Planetas">
-        </div>
-    </section>  
-    
-    <section class="phrases-container">
-        <button id="btn-phrases" onclick="loadPhrases()">Ler uma frase!</button>
-        <p id="phrase"></p>
-    </section>
-    </main>
+            <div class="card-container">
+                <div class="card-main">
+                    <span>Planetas</span>
+                    <h2 id="planets">Carregando...</h2>
+                </div>
+                <img src="./img/planet.svg" alt="Imagem Planetas">
+            </div>
+        </section>
+        
+        <section class="phrases-container">
+            <button id="btn-phrases" onclick="loadPhrases()">Ler uma frase!</button>
+            <p id="phrase"></p>
+        </section>
+        </main>
+    </div>
 
     <script src="./js/index.js"></script>
     

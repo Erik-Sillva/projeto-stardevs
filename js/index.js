@@ -1,6 +1,13 @@
 const persons = document.getElementById('persons');
 const starships = document.getElementById('starships');
 const planets = document.getElementById('planets');
+const boxLoad = document.getElementsByClassName('box-load')[0];
+const content = document.getElementsByClassName('content')[0];
+
+function loading() {
+    boxLoad.style.display = 'none'
+    content.style.display = 'block'
+}
 
 fillCounters();
 
