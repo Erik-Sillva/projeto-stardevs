@@ -119,3 +119,7 @@ main .phrases-container p {
 main .phrases-container p:hover {
     opacity: .7;
 }
+
+main .phrases-container p::selection {
+    background-color: var(--yellow-light);
+}
